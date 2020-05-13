@@ -1,0 +1,65 @@
+.nav {
+    height: 45px;
+    
+    background-color: #f1f1f1;
+    &_menu {
+        margin-top: 10px;
+        ul {
+            list-style-type: none;
+            margin-right: 35px;
+        }
+        a {
+            font-family: "Arial";
+            font-size: 13px;
+            line-height: 13px;
+            font-weight: 400;
+            color: #2d2d2d;
+        }
+    }
+    &_social {
+        /* margin-top: 10px; */
+        a {
+            display: block;
+            img {
+                display: block;
+            }
+            line-height: 0;
+        }
+        /* display: flex;
+        justify-content: space-between;
+        align-content: center; */
+    }
+    &_phone {
+        margin-top: 6px;
+        &_img {
+            display: block;
+            margin-top: 2px;
+            margin-right: 14px;
+        }
+        &_number {
+            
+            display: block;
+            color: #2d2d2d;
+            font-family: 'Roboto';
+            font-size: 20px;
+            font-weight: 700;
+        }
+    }
+    &_search {
+        a {
+            padding: 10px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .nav {
+        &_menu {
+            padding-left: 8px;
+            ul {
+                margin-right: 0;
+                padding-left: 0;
+            }
+        }
+    }
+}

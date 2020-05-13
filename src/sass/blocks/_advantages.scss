@@ -1,0 +1,132 @@
+.advantages {
+    
+    &_item {
+        margin-top: 51px;
+        &_content {
+            float: right;
+            padding: 12px 8px 11px 32px;
+            
+            width: 233px;
+            height: 86px;
+        
+            border: 3px solid #b3b3b3;
+            position: relative;
+            
+        }
+        &_img {
+            background: #fff;
+            border: 3px solid #fff;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%) translateX(-50%);
+            /* height: 100vh; */
+        }
+        &_descr {
+            color: #75a22e;
+            font-family: "Arial";
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 14px;
+            text-transform: uppercase;
+            span {
+                margin-top: 5px;
+                color: #313131;
+                font-size: 13px;
+                font-weight: 400;
+                line-height: 14px;
+                text-transform: none;
+            }
+        }
+    }
+    &_photo {
+        display: block;
+        margin-top: 36px;
+        margin-bottom: 12px;
+        height: 291px;
+    }
+}
+
+@media (max-width:1199px) and (min-width: 992px) {
+    .advantages {
+        &_photo {
+            img {
+                height: 220px;
+            }
+        }
+        &_item {
+            &_content {
+                width: 200px;
+                height: 100px;
+            }
+            &_descr {
+                font-size: 16px;
+            }
+        }
+    }
+
+
+}
+@media (max-width:991px) and (min-width: 576px) {
+    .advantages {
+        padding-top: 46px;
+        padding-right: 0;
+        padding-left: 3px;
+        &_item {
+            margin-top: 0;
+            margin-bottom: 45px;
+            &_content {
+                float: none;
+                margin-left: 31px;
+                padding: 9px 6px 4px 30px;
+                width: 189px;
+                height: 80px;
+                border-width: 1px;
+            }
+            &_descr {
+                font-size: 14px;
+                line-height: 12.56px;
+                span {
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 12.56px;
+                    text-transform: none;
+                }
+            }
+            &_img {
+                height: 50%;
+            }
+        }
+        
+        
+    }
+}
+
+@media (max-width: 575px) {
+    .advantages {
+        padding: 24px 15px 0 28px;
+        &_item {
+            margin-top: 0;
+            margin-bottom: 30px;
+            &_content {
+                float: none;
+                width: 123px;
+                height: 50px;
+                margin: 0 auto;
+                padding: 0 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-width: 1px;
+            }
+            &_descr {
+                text-align: center;
+                font-size: 14px;
+            }
+            &_img {
+                height: 60%;
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,85 @@
+/* @font-face {
+    font-family: 'Arial';
+    src: local('arial_regular'),
+        url('../fonts/arial_regular.truetype') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arial';
+    src: local('arial_bold'),
+        url('../fonts/arial_bold.truetype') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+} */
+
+
+/* @font-face {
+    font-family: 'CenturyGothic';
+    src: local('Gothic_bold'),
+        url('../fonts/centuryGothic_bold.truetype') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CenturyGothic';
+    src: local('CenturyGothic_regular'),
+        url('../fonts/CenturyGothic_regular.truetype') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+} */
+
+/* @font-face {
+    font-family: 'Gotham Pro Narrow';
+    src: local('gothamProNarrow_medium'),
+        url('../fonts/gothamProNarrow_medium.truetype') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+ */
+ @font-face {
+    font-family: 'Gotham';
+    src: local('GothaProMed'),
+        url('../fonts/GothaProMed.otf') format('otf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+
+/* @font-face {
+    font-family: 'Roboto';
+    src: local('Roboto-Bold'),
+        url('../fonts/Roboto-Bold.truetype') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto-Medium'),
+        url('../fonts/Roboto-Medium.truetype') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+} */
+
+/* @font-face {
+    font-family: 'Tahoma';
+    src: local('TahomaRegularfont'),
+        url('../fonts/TahomaRegularfont.truetype') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+} */
+
+
+
+
+
+
+/* bold 700
+medium 500 
+regular 400
+ */

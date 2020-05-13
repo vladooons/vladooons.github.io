@@ -1,0 +1,178 @@
+.links {
+    
+    &_menu {
+        width: 100%;
+        height: 56px;
+        background-color: #a234cf;
+        line-height: 0;
+        display: flex;
+        align-items: center;
+        ul {
+            width: 100%;
+            height: 100%;
+            padding-left: 0; 
+            list-style-type: none;
+            margin-bottom: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            li {
+                height: 100%;
+                
+                /* height: 100%; */
+
+                a {
+                    position: relative;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    color: #ffffff;
+                    padding: 0 28px;
+                    font-family: "Arial";
+                    font-size: 14px;
+                    line-height: 14px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    // Text style for "с, март-ча"
+                    letter-spacing: 0.35px;
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        display: inline-block;
+                        top: 47%;
+                        left: 0;
+                        width: 4px;
+                        height: 4px;
+                        background: #fff;
+                        transform: rotate(-45deg);
+                    }
+                    &:hover{
+                        background-color: #6d1679;
+                        &::before{
+                            content: '';
+                            position: absolute;
+                            transform: rotate(0);
+                            left:-10px;
+                            top:0;
+                            width: 23px;
+                            height: 56px;
+                            background: #6d1679; 
+                            transform: skewX(-20deg);
+                            z-index:10; 
+                        }
+                        &::after {
+                            content:'';
+                                position:absolute;
+                                
+                                right:-10px;
+                                top:0;
+                                width: 23px;
+                                height: 56px;
+                                background: #6d1679; 
+                                transform: skewX(-20deg);
+                                z-index:100;
+                        }
+                        
+                    } 
+                }
+                &:first-child:hover, &:first-child {
+                    a:before {
+                        display: none;
+                    } 
+                }
+                &:first-child {
+                    a {
+                        padding-left: 40px;
+                    }
+                }
+                
+                
+            }
+        }
+        
+    }
+    
+}
+
+
+#orange {
+    margin-left: auto;
+    background-color: #ff7f00;
+    position: relative;
+    a {
+        &:hover {
+            background: #ff7f00;
+            &:before {
+                content: '';
+                position: absolute;
+                left:-10px;
+                top:0;
+                width: 23px;
+                height: 56px;
+                background: #ff7f00; 
+                transform: skewX(-20deg);
+                z-index:10; 
+            }
+            &::after {
+                display: none;
+            }
+
+        }
+    }
+    
+    a:before {
+        content: '';
+        position: absolute;
+        left:-10px;
+        top:0;
+        width: 23px;
+        height: 56px;
+        background: #ff7f00; 
+        transform: skewX(-20deg);
+        z-index:10; 
+    }
+      
+}
+
+@media (max-width:991px) {
+    .links {
+        .container {
+            padding-left: 8px;
+            padding-right: 8px;;
+        }
+        &_menu {
+            
+            ul {
+                li {
+                    a {
+                        padding: 0 26px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 767px) {
+    .links {
+        &_menu {
+            ul {
+                li {
+                    a {
+                        padding: 0 15px;
+                        font-size: 12px;
+                    }
+                    &:first-child {
+                        a {
+                            padding-left: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+

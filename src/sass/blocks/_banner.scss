@@ -1,0 +1,313 @@
+.banner {
+    
+    &_main {
+        margin-top: 28px;
+        height: 370px;
+        /* margin-right:15px ; */
+        .carousel {
+            height: 100%;
+            &-item {
+                height: 100%;
+            }
+            &-inner {
+                height: 100%;
+            }
+            &-indicators {
+                li {
+                    width: 8px;
+                    height: 8px;
+                    border: 2px solid #ffffff;
+                    border-radius: 30%;
+                    background-color: transparent;
+                    opacity: 1;
+                }
+                .active {
+                    background-color: #80b20d;
+                }
+            }
+        }
+        &_img {
+            width: 848px;
+            /* height: 100%; */
+            height: 370px;
+            
+            position: absolute;
+            z-index: -100;
+        }
+        &_header {
+            display: inline-block;
+            margin-top: 60px;
+            margin-left: 66px;
+            color: #ffffff;
+            font-family: "Century Gothic";
+            font-size: 34px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        &_descr {
+            
+            width: 357px;
+            margin-top: 12px;
+            margin-left: 68px;
+            color: #ffffff;
+            font-family: "Arial";
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 18px
+        }
+        &_btn {
+            
+            background-color: #75a22e;
+            width: 128px;
+            height: 33px;
+            margin-top: 61px;
+            margin-left: 68px;
+            color: #ffffff;
+            font-family: "Arial";
+            font-size: 13px;
+            font-weight: 400;
+            text-transform: uppercase;
+            border: none;
+        }
+        &_price {
+            position: absolute;
+            bottom:26px;
+            right: 55px;
+            color: #ffffff;
+            font-family: "Century Gothic";
+            
+            font-weight: 700;
+            // Text style for "1, 5 990"
+            font-family: "Century Gothic";
+            font-weight: 700;
+            // Text style for ""
+            font-family: "Century Gothic";
+            font-size: 60px;
+            font-size: 44px;
+           /*  letter-spacing: 5px; */
+            // Text style for "р"
+            font-family: "Century Gothic";
+            
+            font-weight: 700;
+            writing-mode: vertical-lr;
+            text-orientation: sideways;
+            span {
+                letter-spacing: 0px;
+                font-size: 26px;
+                font-weight: 400;
+            }
+        }
+    }
+
+
+
+    &_right {
+        margin-top: 28px;
+        &_wrapper {
+           
+            height: 370px;
+            margin-left: 9px;
+            background-color: #f1f1f1;
+            padding: 30px 18px 22px 16px;
+        /*  margin-left: 15px; */
+            &_header {
+                color: #80b20d;
+                font-family: "Arial - Bold MT";
+                font-size: 26px;
+                font-weight: 400;
+                text-transform: uppercase;
+                // Text style for ""
+            
+                font-family: "Century Gothic";
+                font-size: 24px;
+                font-weight: 700;
+                // Text style for ","
+                font-family: Arial;
+                font-size: 26px;
+                font-weight: 700;
+                
+                // Text style for "Лучшая цен"
+                font-family: Arial;
+                font-weight: 700;
+                
+                text-align: center;
+            }
+            &_divider {
+                
+                width: 40px;
+                height: 4px;
+                background-color: #80b20d;
+                margin: 0 auto;
+                margin-top: 6px;
+            }
+            &_img {
+                display: block;
+                margin: 0 auto;
+                margin-top: 44px;
+                width: 224px;
+            }
+            &_itemname {
+                margin-top: 50px;
+                color: #2d2d2d;
+                font-family: "Arial";
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 17px;
+                text-transform: uppercase;
+                span {
+                    margin-top: 7px;
+                    color: #909296;
+                    font-family: "Arial";
+                    font-size: 13px;
+                    font-weight: 400;
+                    line-height: 17px;
+                    text-transform: none;
+                }
+            }
+            &_btn {
+                margin-top: 17px;
+                width: 100px;
+                height: 30px;
+                background: #75a22e;
+                color: #ffffff;
+                font-family: "Arial";
+                font-size: 13px;
+                font-weight: 400;
+                
+                border: none;
+            }
+            &_price {
+                
+                display: inline-block;
+                margin-left: 9px;
+                vertical-align: middle;
+                color: #000000;
+                font-family: "Arial";
+                font-size: 24px;
+                line-height: 24px;
+                font-weight: 400;
+                span {
+                    color: #2d2d2c;
+                    font-size: 13px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+        
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    .banner {
+        &_right {
+            &_wrapper {
+                padding: 40px 10px 16px 10px;
+                &_img {
+                    width: 177px;
+                }
+                &_header {
+                    font-size: 20px;
+                }
+                &_itemname {
+                    font-size: 12px;
+                }
+                &_price {
+                    font-size: 18px;
+                }
+                &_btn {
+                    width: 90px;
+                }
+            }
+        }
+    }
+
+
+}
+
+
+@media (max-width:991px)  {
+    .banner {
+        &_main {
+            padding-left: 8px;
+            padding-right: 8px;
+            &_price {
+                right: 4px;
+            }
+        }
+        &_right {
+            padding-right: 8px;
+            &_wrapper {
+                margin-left: 29px;
+                padding-left: 10px;
+                &_price {
+                    margin-left: 21px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .banner {
+        &_main {
+            height: 300px;
+            &_img {
+                right: -85px;
+                width: 687px;
+                height: 300px;
+            }
+            &_header {
+                margin-top: 30px;
+                margin-left: 30px;
+            }
+            &_descr {
+                margin-left: 30px;
+            }
+        }
+        &_right {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+
+@media (max-width: 575px) {
+    .banner {
+        &_right {
+            padding-left: 8px;
+            margin-bottom: 0;
+            &_wrapper {
+                width: 291px;
+                height: 412px;
+                /* margin-left: 0; */
+                margin: 0 auto;
+                padding: 31px 18px 22px 18px;
+                &_header {
+                    font-size: 29px;
+                }
+                &_img {
+                    margin-top: 54px;
+                    width: 248px;
+                }
+                &_itemname {
+                    margin-top: 56px;
+                    font-size: 16px;
+                    span {
+                        font-size: 14px;
+                    }
+                }
+                &_btn {
+                    width: 112px;
+                    height: 33px;
+                    margin-top: 20px;
+                    font-size: 14px;
+                }
+                &_price {
+                    font-size: 27px;
+                }
+            }
+        }
+    }
+
+}

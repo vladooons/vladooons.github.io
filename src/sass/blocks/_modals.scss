@@ -1,0 +1,70 @@
+.modal_call {
+    .modal {
+        &-dialog {
+            
+            margin-top: 164px;
+            width: 360px;
+            height: 306px;
+            box-shadow: none;
+
+        }
+        &-header {
+            height: 49px;
+            background-color: #e9eff4;
+            
+            .close {
+                color: #892b96;
+                opacity: 1;
+                margin-left: 0;
+            }
+        }
+        &-title {
+            color: #2d2d2c;
+            font-family: "Arial";
+            font-size: 24px;
+            font-weight: 700;
+            /* text-align: center; */
+        }
+    }
+    &_btn {
+        margin-top: 43px;
+        width: 165px;
+        height: 37px;
+        background-color: #75a22e;
+        color: #ffffff;
+        font-family: "Arial";
+        font-size: 13px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    .form {
+        &-control {
+            height: 34px;
+            font-family: "Arial";
+        }
+        &-group {
+            label {
+                color: #2d2d2c;
+                font-family: "Arial";
+                font-size: 13px;
+                font-weight: 400;
+            }
+            input {
+                color: #989898;
+                font-family: "Arial";
+                font-size: 13px;
+                font-weight: 400;
+                
+                
+            }
+        }
+    }
+        
+}
+
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}

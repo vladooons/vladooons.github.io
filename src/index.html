@@ -1,0 +1,859 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="css/bootstrap-reboot.min.css"> -->
+  
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    
+
+    <header>
+        <div class="nav">
+            <div class="container p-sm-0"> 
+                <div class="row ">
+                    <div class="nav_menu d-none d-sm-block col-sm-7 col-lg-5 ">
+                        <ul class="d-flex justify-content-between align-items-center p-lg-0">
+                            <li><a href="#">Доставка</a></li>
+                            <li><a href="#">Оплата</a></li>
+                            <li><a href="#">Оптовикам</a></li>
+                            <li><a href="#">Отзывы</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav_social col-lg-2 offset-lg-5 pl-0 d-none d-lg-flex justify-content-between align-items-center">
+                        <a href="#" class=""><img src="icons/vk.png" alt=""></a>
+                        <a href="#" class="facebook"><img src="icons/facebook.png"  alt=""></a>
+                        <a href="#" class="twitter"><img src="icons/twitter.png" alt=""></a>
+                        <a href="#" class="ok"><img src="icons/ok.png" alt=""></a>
+                        <a href="#" class="instagram"><img src="icons/instagram.png" alt=""></a>
+                        <a href="#" class="youtube"><img src="icons/youtube.png" alt=""></a>
+                    
+                    
+                    </div>
+                    <div class="nav_phone col-9 d-flex align-items-center d-sm-none">
+                        <img src="icons/phone_320.png" alt="" class="nav_phone_img">
+                        <a href="tel:88007881718" class="nav_phone_number">8 (800) 788-17-18</a>
+                        
+                        
+                    </div>
+                    <div class="nav_search col-3 col-sm-5 d-flex justify-content-end d-lg-none ">
+                        <a href="#" class="search_mobile d-inline-block d-sm-none">
+                            <img id="lens" src="icons/lens.png" alt="">
+                        </a>
+                        <form class="search_wrapper form-inline">
+                            <div class="input-group mb-3">
+                                <div class="dropdown input-group-prepend">
+                                    <button class="search_dropdown dropdown-toggle"  type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Велосипеды</button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Велосипеды</a>
+                                            <a class="dropdown-item" href="#">Гироскутеры</a>
+                                            <a class="dropdown-item" href="#">Смарт-часы</a>
+                                            <!-- <div role="separator" class="dropdown-divider"></div> -->
+                                            <a class="dropdown-item" href="#">Везде</a>
+                                        </div>
+                                </div>
+                                <input type="text" class="search_text form-control" aria-label="Text input with dropdown button" >
+                                <button class="search_btn" type="button"><img src="icons/lens.png" alt=""></button>
+                            </div>
+                            <img src="icons/up.png" alt="up" class="search_up">
+                            <img src="icons/down.png" alt="down" class="search_down">
+                            <!-- <div class="search_up"><img src="icons/up.png" alt="up" ></div>
+                            <div class="search_down"><img src="icons/down.png" alt="down"></div> -->
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="middle">
+            <div class="container p-sm-0">
+                <div class="row">
+                    <div class="middle_logo col-12 col-sm-5 col-lg-3">
+                        <img src="icons/logo.png" alt="log">
+                        <div class="middle_logo_text">
+                            <div class="middle_logo_text_header">giro-msk</div>
+                            <div class="middle_logo_text_subheader">товары для активного отдыха </div>
+                        </div>
+                    </div> 
+                    <!-- check -->
+                    <div class="middle_search col-lg-4 col-xl-5 d-none d-lg-block ">
+                        <form class="search_wrapper form-inline">
+                            <div class="input-group mb-3">
+                                <div class="dropdown input-group-prepend">
+                                    <button id="drop_menu" class="search_dropdown dropdown-toggle"  type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Велосипеды</button>
+                                        <div  class="dropdown-menu" data-dispay="static" data-boundary="viewport">
+                                            <a class="dropdown-item" href="#">Велосипеды</a>
+                                            <a class="dropdown-item" href="#">Гироскутеры</a>
+                                            <a class="dropdown-item" href="#">Смарт-часы</a>
+                                            <!-- <div role="separator" class="dropdown-divider"></div> -->
+                                            <a class="dropdown-item" href="#">Везде</a>
+                                        </div>
+                                </div>
+                                <input type="text" class="search_text form-control" aria-label="Text input with dropdown button" >
+                                <button class="search_btn" type="button"><img src="icons/lens.png" alt=""></button>
+                            </div>
+                            <img src="icons/up.png" alt="up" class="search_up">
+                            <img src="icons/down.png" alt="down" class="search_down">
+                        </form>
+    
+                    </div>
+                    <div class="middle_form d-none d-sm-flex col-sm-7 col-lg-5 col-xl-4">
+                        <div class="middle_form_question">
+                            <img src="icons/chat.png" alt="">
+                            <div>
+                                <a href="#">
+                                    Задайте нам
+                                    <br>
+                                    <span>свой вопрос</span>
+                                </a>
+                            </div>
+                            
+                        </div>
+    
+                        <div class="middle_form_call">
+                            <img src="icons/phone.png" alt="">
+                            <div>
+                                <a href="#" id="link_call">Заказать обратный звонок</a> 
+    
+                                <a href="tel:88007881718" class="number">8 (800) 788-17-18</a>
+        
+                            </div>
+                        </div>
+    
+                    </div>
+                    <div class="middle_menu col-12 d-sm-none">
+                        <div class="middle_menu_btn">
+                            <div class="middle_menu_hamburger">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <ul class="middle_menu_list middle_menu_list_activ">
+                            <li class="middle_menu_item">
+                                <a href="#">Главная</a>
+                            </li>
+                            <li class="middle_menu_item">
+                                <a href="#">Доставка</a>
+                            </li>
+                            <li class="middle_menu_item">
+                                <a href="#">Оплата</a>
+                            </li>
+                            <li class="middle_menu_item">
+                                <a href="#">Оптовикам</a>
+                            </li>
+                            <li class="middle_menu_item">
+                                <a href="#">Отзывы</a>
+                            </li>
+                            <li class="middle_menu_item">
+                                <a href="#">контакты</a>
+                            </li>
+                            <li class="middle_menu_item">
+                                <a href="#">гироскутеры</a>
+                            </li>
+                        </ul>
+                        <div class="middle_menu_close middle_menu_close_activ"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="links">
+            <div class="container">
+                <div class="row">
+                    <div class="links_menu col-12-sm d-none d-sm-block">
+                        <ul>
+                            <li><a href="#">Гироскутеры</a></li>
+                            <li><a href="#">смарт-часы</a></li>
+                            <li><a href="#">велосипеды</a></li>
+                            <li><a href="#">спортивная одежда</a></li>
+                            <li id="orange" class="d-none d-lg-block"><a href="#" >распродажа</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+    
+    
+    <main>
+
+
+        <div class="container p-sm-0">
+            <div class="row">
+
+                <div class="banner_main col-sm-12 col-lg-9 order-lg-1 order-sm-1 d-none d-sm-block">
+                    <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/bg1.png" alt="" class="banner_main_img">
+                                <h2 class="banner_main_header">Diamondback<br>
+                                    Горный велосипед</h2>
+                                <div class="banner_main_descr">Двухподвес профессионального уровня 2016 года! 
+                                    Легкая и прочная рама из алюминиевого сплава <br>+ имеются двойные алюминиевые обода.</div>
+                                <button class="banner_main_btn">Подробнее</button>
+                                <div class="banner_main_price">15 990 <span>р</span> </div>
+
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/bg1.png" alt="" class="banner_main_img">
+                                <h2 class="banner_main_header">Diamondback<br>
+                                    Горный велосипед</h2>
+                                <div class="banner_main_descr">Двухподвес профессионального уровня 2016 года! 
+                                    Легкая и прочная рама из алюминиевого сплава <br>+ имеются двойные алюминиевые обода.</div>
+                                <button class="banner_main_btn">Подробнее</button>
+                                <div class="banner_main_price">15 990 <span>р</span> </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/bg1.png" alt="" class="banner_main_img">
+                                <h2 class="banner_main_header">Diamondback<br>
+                                    Горный велосипед</h2>
+                                <div class="banner_main_descr">Двухподвес профессионального уровня 2016 года! 
+                                    Легкая и прочная рама из алюминиевого сплава <br>+ имеются двойные алюминиевые обода.</div>
+                                <button class="banner_main_btn">Подробнее</button>
+                                <div class="banner_main_price">15 990 <span>р</span> </div>
+                                <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                            </div>
+                        </div>
+                        
+                      </div>
+                </div>
+
+                <div class="banner_right col-12 col-sm-8 offset-sm-2  col-md-5 offset-md-0 col-lg-3 order-lg-2 order-sm-3">
+                    <div class="banner_right_wrapper">
+                        <div class="banner_right_wrapper_header"> 
+                            Лучшая цена</div>
+                        <div class="banner_right_wrapper_divider"></div>
+                        <img src="img/giro_right.png" alt="" class="banner_right_wrapper_img">
+                        <div class="banner_right_wrapper_itemname">
+                            Sony SmartWatch 3 SWR50 <br>
+                            <span>Смарт-часы</span>
+                        </div>
+                        <button class="banner_right_wrapper_btn">Заказать</button>
+                        <div class="banner_right_wrapper_price">
+                            24 899
+                            <span>руб.</span>
+                        </div>
+                    </div>
+         
+                </div>
+                
+                
+                <div class="advantages col-12 col-sm-12 col-md-7 col-lg-9 order-lg-3 order-sm-2">
+                    <div class="row">
+                    <div class="advantages_item col-6 col-sm-6 col-lg-4">
+                        <div class="advantages_item_content">
+                            <img src="icons/adv1.png" alt="lowprices" class="advantages_item_img">
+                            <div class="advantages_item_descr">
+                                низкие цены
+                                <span class="d-none d-sm-block">Цены ниже чем у конкурентов. 
+                                    Нашли дешевле? 
+                                    <br> Сделаем скидку!</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="advantages_item col-6 col-sm-6 col-lg-4">
+                        <div class="advantages_item_content">
+                            <img src="icons/adv2.png" alt="delievery" class="advantages_item_img">
+                            <div class="advantages_item_descr">
+                                доставка
+                                <span class="d-none d-sm-block">Огранизуем доставку <br>
+                                    товара по РФ и Китаю</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="advantages_item col-6 col-sm-6 col-lg-4">
+                        <div class="advantages_item_content">
+                            <img src="icons/adv3.png" alt="selections" class="advantages_item_img">
+                            <div class="advantages_item_descr">
+                                большой выбор
+                                <span class="d-none d-sm-block">Всегда Большой выбор 
+                                    товаров в наличии <br>
+                                    и под заказ</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                
+                
+                    <div class="advantages_item col-6 col-sm-6 col-lg-4 ">
+                        <div class="advantages_item_content">
+                            <img src="icons/adv4.png" alt="guarantee" class="advantages_item_img">
+                            <div class="advantages_item_descr">
+                                гарантия
+                                <span class="d-none d-sm-block">Даем гарантию 3 месяца <br>
+                                    на весь приобретенный <br>
+                                    у нас товар</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="advantages_item col-6 col-sm-6 col-lg-4 ">
+                        <div class="advantages_item_content">
+                            <img src="icons/adv5.png" alt="test-drive" class="advantages_item_img">
+                            <div class="advantages_item_descr">
+                                Тест-драйв
+                                <span class="d-none d-sm-block">Бесплатный тест-драйв <br>
+                                    гироскутеров и велосипедов <br>
+                                    перед покупкой</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="advantages_item col-6 col-sm-6 col-lg-4">
+                        <div class="advantages_item_content">
+                            <img src="icons/adv6.png" alt="moneyreturn" class="advantages_item_img">
+                            <div class="advantages_item_descr">
+                                Возврат денег
+                                <span class="d-none d-sm-block">Вернем деньги в течении <br>
+                                14 дней после покупки, <br>
+                                если товар вас не устроил</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                </div>
+
+                <div class="advantages_photo col-lg-3 order-lg-4 d-none d-lg-block">
+                    <img src="img/bike_right.png" alt="bike">
+                </div>
+            
+  
+        
+            </div>
+        </div>
+
+        <div class="container p-sm-0">
+            <div class="row">
+
+                <div class="tabs col-12 col-sm-12">
+                    <ul class="nav nav-tabs tabs_links" id="myTab" role="tablist">
+                        <li class="nav-item tabs_links_item">
+                            <a class="nav-link active d-flex align-items-center" id="new-tab" data-toggle="tab" href="#new" role="tab" aria-controls="new" aria-selected="true"><span>Новинки</span></a>
+                        </li>
+                        <li class="nav-item tabs_links_item">
+                            <a class="nav-link d-flex align-items-center" id="popular-tab" data-toggle="tab" href="#popular" role="tab" aria-controls="popular" aria-selected="false"><span>Популярное</span></a>
+                        </li>
+                        <li class="nav-item tabs_links_item">
+                            <a class="nav-link d-flex align-items-center" id="sales-tab" data-toggle="tab" href="#sales" role="tab" aria-controls="sales" aria-selected="false"><span>Товары <br class="d-block d-sm-none">со скидкой</span></a>
+                        </li>
+                        
+                        <img src="icons/prev.png" alt="" class="prev ml-auto d-none d-lg-block">
+                        <div class="divider d-none d-lg-block"></div>
+                        <img src="icons/next.png" alt="" class="next d-none d-lg-block">
+                    </ul>
+           
+                    <div class="tab-content">
+                        <div class="swiper-container">
+                            
+                            <div class="swiper-wrapper">   
+
+
+                        <div class="tab-pane fade show active swiper-slide" id="new" role="tabpanel" aria-labelledby="new-tab">
+                            
+                            
+                            <div class="row">
+                                
+
+                                
+                                    <div class="col-sm-6 col-lg-3">
+                                        <div class="tab-content_wrapper">
+                                            <div class="onsale">-20%</div>
+                                            <div class="newest active">Новинка</div>
+                                            <img src="img/item1.png" alt="" class="tab-content_img">
+                                            <div class="tab-content_name">
+                                                Aspect Ideal 26 VBR
+                                                <br><span>Горный велосипед</span>
+                                            </div>
+                                            <button class="tab-content_btn">Заказать</button>
+                                            <div class="tab-content_price">
+                                                22 799
+                                                <span>руб.</span>
+                                                <div class="tab-content_price_old">
+                                                    99999
+                                                    <span>руб.</span>
+                                                </div>
+                                            </div>
+                                    </div> 
+                                    
+                                    </div>
+                                
+                                    <div class="col-sm-6 col-lg-3">
+                                        <div class="tab-content_wrapper">
+                                            <div class="onsale active">-20%</div>
+                                            <div class="newest">Новинка</div>
+                                            <img src="img/item2.png" alt="" class="tab-content_img">
+                                            <div class="tab-content_name">
+                                                Smart Balance K3 (желтый)
+                                                <br><span>Гироскутер</span>
+                                            </div>
+                                            <button class="tab-content_btn">Заказать</button>
+                                            <div class="tab-content_price">
+                                                13 800
+                                                <span>руб.</span>
+                                                <div class="tab-content_price_old active">
+                                                    22 400
+                                                    <span>руб.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="col-sm-6 col-lg-3">
+                                        <div class="tab-content_wrapper">
+                                            <div class="onsale">-20%</div>
+                                            <div class="newest">Новинка</div>
+                                            <img src="img/item3.png" alt="" class="tab-content_img">
+                                            <div class="tab-content_name">
+                                                Smart Balance K3 (желтый)
+                                                <br><span>Гироскутер</span>
+                                            </div>
+                                            <button class="tab-content_btn">Заказать</button>
+                                            <div class="tab-content_price">
+                                                17 400
+                                                <span>руб.</span>
+                                                <div class="tab-content_price_old">
+                                                    99999
+                                                    <span>руб.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                        <div class="tab-content_wrapper">
+                                            <div class="onsale">-20%</div>
+                                            <div class="newest">Новинка</div>
+                                            <img src="img/item4.png" alt="" class="tab-content_img">
+                                            <div class="tab-content_name">
+                                                Sony SmartWatch 3 SWR50
+                                                <br><span>Смарт-часы</span>
+                                            </div>
+                                            <button class="tab-content_btn">Заказать</button>
+                                            <div class="tab-content_price">
+                                                13 800
+                                                <span>руб.</span>
+                                                <div class="tab-content_price_old">
+                                                    999999
+                                                    <span>руб.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            
+                            </div>
+                            
+    
+    
+                        </div>
+                        <div class="tab-pane fade swiper-slide" id="popular" role="tabpanel" aria-labelledby="popular-tab">
+                            <div class="row">
+                                <div class="col-sm-6 col-lg-3 order-4">
+                                    <div class="tab-content_wrapper">
+                                        <div class="onsale">-20%</div>
+                                        <div class="newest active">Новинка</div>
+                                        <img src="img/item1.png" alt="" class="tab-content_img">
+                                        <div class="tab-content_name">
+                                            Aspect Ideal 26 VBR
+                                            <br><span>Горный велосипед</span>
+                                        </div>
+                                        <button class="tab-content_btn">Заказать</button>
+                                        <div class="tab-content_price">
+                                            22 799
+                                            <span>руб.</span>
+                                            <div class="tab-content_price_old">
+                                                99999
+                                                <span>руб.</span>
+                                            </div>
+                                        </div>
+                                    </div> 
+    
+                                </div>
+                                <div class="col-sm-6 col-lg-3">
+                                    <div class="tab-content_wrapper">
+                                        <div class="onsale active">-20%</div>
+                                        <div class="newest">Новинка</div>
+                                        <img src="img/item2.png" alt="" class="tab-content_img">
+                                        <div class="tab-content_name">
+                                            Smart Balance K3 (желтый)
+                                            <br><span>Гироскутер</span>
+                                        </div>
+                                        <button class="tab-content_btn">Заказать</button>
+                                        <div class="tab-content_price">
+                                            13 800
+                                            <span>руб.</span>
+                                            <div class="tab-content_price_old active">
+                                                22 400
+                                                <span>руб.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-3">
+                                    <div class="tab-content_wrapper">
+                                        <div class="onsale">-20%</div>
+                                        <div class="newest">Новинка</div>
+                                        <img src="img/item3.png" alt="" class="tab-content_img">
+                                        <div class="tab-content_name">
+                                            Aspect Ideal 26 VBR
+                                            <br><span>Горный велосипед</span>
+                                        </div>
+                                        <button class="tab-content_btn">Заказать</button>
+                                        <div class="tab-content_price">
+                                            13 800
+                                            <span>руб.</span>
+                                            <div class="tab-content_price_old">
+                                                99999
+                                                <span>руб.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-3">
+                                    <div class="tab-content_wrapper">
+                                        <div class="onsale">-20%</div>
+                                        <div class="newest">Новинка</div>
+                                        <img src="img/item4.png" alt="" class="tab-content_img">
+                                        <div class="tab-content_name">
+                                            Sony SmartWatch 3 SWR50
+                                            <br><span>Смарт-часы</span>
+                                        </div>
+                                        <button class="tab-content_btn">Заказать</button>
+                                        <div class="tab-content_price">
+                                            13 800
+                                            <span>руб.</span>
+                                            <div class="tab-content_price_old">
+                                                999999
+                                                <span>руб.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade swiper-slide" id="sales" role="tabpanel" aria-labelledby="sales-tab">
+                            <div class="row">
+                                <div class="col-sm-6 col-lg-3 order-3">
+                                    <div class="tab-content_wrapper">
+                                        <div class="onsale">-20%</div>
+                                        <div class="newest active">Новинка</div>
+                                        <img src="img/item1.png" alt="" class="tab-content_img">
+                                        <div class="tab-content_name">
+                                            Aspect Ideal 26 VBR
+                                            <br><span>Горный велосипед</span>
+                                        </div>
+                                        <button class="tab-content_btn">Заказать</button>
+                                        <div class="tab-content_price">
+                                            22 799
+                                            <span>руб.</span>
+                                            <div class="tab-content_price_old">
+                                                99999
+                                                <span>руб.</span>
+                                            </div>
+                                        </div>
+                                    </div> 
+    
+                                </div>
+                                <div class="col-sm-6 col-lg-3 order-4">
+                                    <div class="tab-content_wrapper">
+                                        <div class="onsale active">-20%</div>
+                                        <div class="newest">Новинка</div>
+                                        <img src="img/item2.png" alt="" class="tab-content_img">
+                                        <div class="tab-content_name">
+                                            Smart Balance K3 (желтый)
+                                            <br><span>Гироскутер</span>
+                                        </div>
+                                        <button class="tab-content_btn">Заказать</button>
+                                        <div class="tab-content_price">
+                                            13 800
+                                            <span>руб.</span>
+                                            <div class="tab-content_price_old active">
+                                                22 400
+                                                <span>руб.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-3">
+                                    <div class="tab-content_wrapper">
+                                        <div class="onsale">-20%</div>
+                                        <div class="newest">Новинка</div>
+                                        <img src="img/item3.png" alt="" class="tab-content_img">
+                                        <div class="tab-content_name">
+                                            Aspect Ideal 26 VBR
+                                            <br><span>Горный велосипед</span>
+                                        </div>
+                                        <button class="tab-content_btn">Заказать</button>
+                                        <div class="tab-content_price">
+                                            13 800
+                                            <span>руб.</span>
+                                            <div class="tab-content_price_old">
+                                                99999
+                                                <span>руб.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-3">
+                                    <div class="tab-content_wrapper">
+                                        <div class="onsale">-20%</div>
+                                        <div class="newest">Новинка</div>
+                                        <img src="img/item4.png" alt="" class="tab-content_img">
+                                        <div class="tab-content_name">
+                                            Sony SmartWatch 3 SWR50
+                                            <br><span>Смарт-часы</span>
+                                        </div>
+                                        <button class="tab-content_btn">Заказать</button>
+                                        <div class="tab-content_price">
+                                            13 800
+                                            <span>руб.</span>
+                                            <div class="tab-content_price_old">
+                                                999999
+                                                <span>руб.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                            </div>
+
+                        </div>   
+
+                    </div>
+                 
+
+
+                </div>
+
+                <div class="info col-12 col-sm-12 col-lg-8 ">
+                    <h2 class="info_title">
+                        Товары для активного отдыха и занятий отдыха
+                    </h2>
+                    <div class="info_descr">
+                        Наш интернет-магазин в Москве всегда имеет в наличии велотехнику мировых производителей: Merida, Stark, Stels, Trek и другие. На сайте GIRO-MSK.ru, вы найдете то, что ищете, - 
+                        будь то женские или детские модели, прогулочные или спортивные, мужская техника и аксессуары. Также наш магазин может похвастаться отличным выбором маутинбайков и 
+                        шоссейных велосипедов. Просто выберите нужный тип, а с остальным поможем мы. Специалисты Велосайта профессионально катаются сами и знают о веломире решительно все!
+                        <br><br>
+                        Популярность велосипедного катания последние годы в России неизменно растет. Спросом пользуются уже не только детские и профессиональные, но и фэтбайки, складные и горные модели для тех, кто готов к продвинутому уровню катания. При выборе велосипеда важно исходить из учета своих потребностей и принимать во внимание на технические характеристики. Так, если будете кататься только в городской черте, не покупайте громоздкие спортивные байки. А, если вы выбираете езду по пересеченной местности, присмотритесь к моделям с хорошей амортизацией и оборудованием.
+                    </div>
+                </div>
+
+
+                <div class="info col-lg-4 d-none d-lg-block">
+                    <img src="img/family.png" alt="family" class="info_img">
+                </div>
+            
+
+            </div>
+        </div>
+    </main>
+    
+
+
+    
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="container p-sm-0">
+            <div class="row">
+                <div class="footer_item col-lg-2 d-none d-lg-block">
+                    <div class="footer_title">Помощь</div>
+                    <ul>
+                        <li><a href="#" class="footer_link">Заказ товара на сайте</a></li>
+                        <li><a href="#" class="footer_link">Доставка товара</a></li>
+                        <li><a href="#" class="footer_link">Как оплатить товар</a></li>
+                    </ul>
+                </div>
+                <div class="footer_item col-lg-2 d-none d-lg-block">
+                    <div class="footer_title">Информация</div>
+                    <ul>
+                        <li><a href="#" class="footer_link">Как выбрать велосипед</a></li>
+                        <li><a href="#" class="footer_link">Все о гироскутерах</a></li>
+                        <li><a href="#" class="footer_link">Акции</a></li>
+                    </ul>
+                </div>
+                <div class="footer_item col-sm-3 col-lg-2 d-none d-sm-block ">
+                    <div class="footer_title">О компании</div>
+                    <ul>
+                        <li><a href="#" class="footer_link">Что такое GIRO-MSK?</a></li>
+                        <li><a href="#" class="footer_link">Резвизиты</a></li>
+                        <li><a href="#" class="footer_link">Работа и вакансии</a></li>
+                        <li><a href="#" class="footer_link">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer_item col-8 col-sm-3 col-lg-2 pr-0 order-2 order-sm-last">
+                    <div class="footer_title">Мы в социальных сетях</div>
+                    <div class="footer_social d-flex justify-content-between align-items-center flex-sm-wrap">
+                        <a href="#" ><img src="icons/vk.png" alt=""></a>
+                        <a href="#" ><img src="icons/facebook.png"  alt=""></a>
+                        <a href="#" ><img src="icons/twitter.png" alt=""></a>
+                        <a href="#" ><img src="icons/ok.png" alt=""></a>
+                        <a href="#" ><img src="icons/instagram.png" alt=""></a>
+                        <a href="#" ><img src="icons/youtube.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="footer_item contacts col-12 col-sm-6 col-lg-4 order-1 order-sm-last">
+                    <div class="float-sm-right">
+                        <div class="footer_title contacts">Контакты</div>
+                        <ul class="mt-sm-2"><!-- float-md-right -->
+                            <li>
+                                <img class="footer_img" src="icons/address.png" alt="adress">
+                                <a href="#" class="footer_link contacts">г. Благовещенск ул. Амурская, д. 204, оф. 5</a>
+                            </li>
+                            <li>
+                                <img class="footer_img" src="icons/phone_footer.png" alt="phone">
+                                <a href="#" class="footer_link contacts">+7 (914) 560-66-10</a>
+                            </li>
+                            <li>
+                                <img class="footer_img" src="icons/mail.png" alt="">
+                                <a href="#" class="footer_link contacts">shop@giro-msk.ru</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-8 col-sm-9 col-lg-7">
+                    <div class="footer_copyright">
+                        © 2010-2016 | 
+                        <span>GIRO-MSK</span> <br>
+                        <span class="d-none d-sm-block">
+                            Любое копирование информации не для нашего промо запрещены без письменного разрешения.</span>
+                    </div>
+                </div>
+                <div class="col-4 col-sm-3 col-lg-2 offset-lg-3">
+                    <div class="footer_devs float-right">
+                        Сделано в <br class="d-block d-sm-none">
+                        <a href="#">SP-ArtGroup</a>
+                        
+                        <span class="d-none d-sm-block">Все права защищены</span> 
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+               
+    
+    
+
+      
+
+
+
+    <div class="modal_call">
+        <div class="modal" id="modal_call" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header align-items-center">
+                        <h5 class="modal-title mx-auto">Обратный звонок</h5>
+                        <button type="button" class="close align-self-end" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Ваше имя:</label>
+                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Александр">
+                                
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Телефон:</label>
+                                <input type="number" class="form-control" id="exampleInputPassword1" placeholder="+7 920 455 66 55">
+                            </div>
+                            <button type="submit" class="modal_call_btn pl-auto d-block mx-auto
+                            ">Заказать</button>
+                        </form>
+                    </div>
+                    <!-- <div class="modal-body">
+                    <p>Modal body text goes here.</p>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div> -->
+                </div>
+            </div>
+          </div>
+    </div>
+
+
+
+        
+   <!--  
+           
+            <div class="swiper-slide">Slide 1 <img src="img/giro_right.png" alt=""> </div>
+            <div class="swiper-slide">Slide 2 <img src="img/bike_right.png" alt=""></div>
+            <div class="swiper-slide">Slide 3 <img src="img/item1.png" alt=""></div>
+            
+        </div>
+        
+    
+        f we need scrollbar 
+         <div class="swiper-scrollbar"></div> 
+    </div>
+     -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="js/script.js"></script>
+
+    
+
+
+    <script>
+            
+    </script>
+
+
+
+  </body>
+</html>
