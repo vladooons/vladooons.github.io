@@ -2,8 +2,18 @@ $(document).ready(function(){
 
      $('.middle_form a').click(function(e) {
         e.preventDefault(); 
+        $('#modal_call .form_order').removeClass('active');
         $('#modal_call').modal('show');
         return false; 
+    });
+
+    $('.tab-content_btn').each(function(i){
+        $(this).on('click', function() {
+            $('#modal_call .form_order').addClass('active');
+            $('#modal_call .form_order_descr').text($('.tab-content_name').eq(i).text());
+            $('#modal_call').modal('show');
+
+        });
     });
 
     var mySwiper = new Swiper ('.swiper-container', {

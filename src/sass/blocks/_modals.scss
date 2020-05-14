@@ -53,9 +53,21 @@
                 color: #989898;
                 font-family: "Arial";
                 font-size: 13px;
+                font-weight: 400; 
+            }
+        }
+        &_order {
+            display: none;
+            font-family: 'Arial';
+            font-weight: 600;
+            font-size: 16px;
+            margin-bottom: 10px;
+            &.active {
+                display: block;
+            }
+            &_descr {
+                font-size: 12px;
                 font-weight: 400;
-                
-                
             }
         }
     }
