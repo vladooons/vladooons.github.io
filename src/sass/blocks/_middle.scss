@@ -4,13 +4,7 @@
     
     &_logo {
         display: flex;
-        /* justify-content: space-between; */
-        align-content: center; 
-        img {
-            display: block;
-            width: 44px;
-            height: 44px;
-        }
+        align-content: center;  
         &_text {
             margin-left: 8px;
             &_header {
@@ -176,13 +170,6 @@
 
 @media (max-width: 1199px) and (min-width: 992px) {
     .middle {
-        &_logo {
-            &_text {
-                &_header {
-                    font-size: 30px;
-                }
-            }
-        }
         &_form {
             padding-left: 40px;
         }
@@ -199,7 +186,7 @@
             padding-left: 40px;
         }
         &_logo {
-            padding-left: 0;
+            padding-left: 5px;
         }
     }
     .search {
@@ -245,13 +232,6 @@
 
 @media (max-width: 767px) {
     .middle {
-        &_logo {
-            &_text {
-                &_header {
-                    font-size: 30px;
-                }
-            }
-        }
         &_form {
             padding-left: 5px;
             &_call {
@@ -291,6 +271,7 @@
         &_logo {
             justify-content: center;
             margin-bottom: 37px;
+            padding-left: 0;
         }
         &_menu {
             
