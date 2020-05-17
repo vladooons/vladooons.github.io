@@ -756,8 +756,58 @@
     </footer>
                
 
-    <div class="modal_call">
+    <div class="overlay">
         <div class="modal" id="modal_call" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header align-items-center">
+                        <h5 class="modal-title mx-auto">Сделать заказ</h5>
+                        <button type="button" class="close align-self-end" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- <div class="form_order">Ваш заказ:
+                            <div class="form_order_descr">
+
+                            </div>
+                        </div> -->
+                        <form class="feed-form">
+                            
+                            <div class="form-group">
+                                <label for="inputName">Ваше имя:</label>
+                                <input name="name" type="text" class="form-control" id="inputName" placeholder="Ваше имя">
+                                
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPhone">Телефон:</label>
+                                <!--  placeholder="+7 920 455 66 55"> -->
+                                <input name="phone"  class="form-control" id="inputPhone" placeholder="Ваш телефон">
+                            </div>
+                            <button type="submit" class="overlay_btn pl-auto d-block mx-auto
+                            ">Заказать</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+          </div>
+    
+
+        <div class="modal" id="modal_thanks" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="form_thanks">Спасибо за вашу заявку!
+                            <div class="form_manager">
+                                Наш менеджер свяжется с вами в ближайшее время!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="modal" id="modal_order" tabindex="-1" role="dialog">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header align-items-center">
@@ -767,22 +817,24 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <form>
-                            <div class="form_order">Ваш заказ:
-                                <div class="form_order_descr">
+                        <div class="form_order">Ваш заказ:
+                            <div class="form_order_descr">
 
-                                </div>
                             </div>
+                        </div>
+                        <form class="feed-form">
+                            
                             <div class="form-group">
                                 <label for="inputName">Ваше имя:</label>
-                                <input type="text" class="form-control" id="inputName" placeholder="Александр">
+                                <input name="name" type="text" class="form-control" id="inputName" placeholder="Ваше имя">
                                 
                             </div>
                             <div class="form-group">
                                 <label for="inputPhone">Телефон:</label>
-                                <input type="number" class="form-control" id="inputPhone" placeholder="+7 920 455 66 55">
+                                <!--  placeholder="+7 920 455 66 55"> -->
+                                <input name="phone"  class="form-control" id="inputPhone" placeholder="Ваш телефон">
                             </div>
-                            <button type="submit" class="modal_call_btn pl-auto d-block mx-auto
+                            <button type="submit" class="overlay_btn pl-auto d-block mx-auto
                             ">Заказать</button>
                         </form>
                     </div>
@@ -790,10 +842,6 @@
             </div>
           </div>
     </div>
-
-
-
-  
 
 
 
@@ -812,6 +860,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper/js/swiper.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <script src="js/script.js"></script>
 
     

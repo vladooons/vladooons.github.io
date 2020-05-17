@@ -2,19 +2,33 @@ $(document).ready(function(){
 
      $('.middle_form a').click(function(e) {
         e.preventDefault(); 
-        $('#modal_call .form_order').removeClass('active');
         $('#modal_call').modal('show');
         return false; 
     });
 
     $('.tab-content_btn').each(function(i){
         $(this).on('click', function() {
-            $('#modal_call .form_order').addClass('active');
-            $('#modal_call .form_order_descr').text($('.tab-content_name').eq(i).text());
-            $('#modal_call').modal('show');
+
+            $('#modal_order .form_order_descr').text($('.tab-content_name').eq(i).text());
+            $('#modal_order').modal('show');
 
         });
     });
+
+
+     $('form').submit(function(e) {
+        e.preventDefault();
+        $.ajax({
+            /* type: "POST",
+            url: "",
+            data: $(this).serialize() */
+        }).done(function() {
+            $(this).find("input").val("");
+            $('#modal_call, #modal_order').modal('hide');
+        });
+        return false;
+    }); 
+
 
     var mySwiper = new Swiper ('.swiper-container', {
         direction: 'horizontal',
@@ -125,6 +139,58 @@ $(document).ready(function(){
         console.log();
     });
 
+/*     $('input[name=phone]').mask("?+9 (999) 999-99-99", {autoclear: false});
+  */
+    /* $('input[name=phone]').mask("+9 (999) 999-99-99"); */
+
+    var options =  {
+        /* onComplete: function(cep) {
+            alert('CEP Completed!:' + $('input[name=phone]').cleanVal());
+        }, */
+        placeholder: "+_ ___ ___ __ __"
+        
+    };
+
+
+    $('input[name=phone]').mask('+0 000 000 00 00', options);
+/*     $('input[name=phone]').mask('+0 000 000 00 00',
+        {placeholder: "+_ ___ ___ __ __"}
+    ); */
+
+
+    $.validator.addMethod("minLengthPhone", function(value, element) {
+        console.log($('input[name=phone]').cleanVal());
+        return $('input[name=phone]').cleanVal().length>10;
+
+    },
+    "Введите полный номер"); 
+
+
+
+
+    $('.feed-form').validate({
+        rules: {
+            name: {
+                required: true,
+                minlength: 2
+            },
+            phone: {
+                required: true,
+                minLengthPhone: true
+            }
+        },
+        messages: {
+            name: {
+                required: "Пожалуйста, введите ваше имя",
+                minlength: jQuery.validator.format("Имя не может быть короче {0} символов!")
+
+            },
+            phone: 
+            {
+                required: "Пожалуйста, введите ваш номер телефона",
+            } 
+        }
+    });
 });
 
 
